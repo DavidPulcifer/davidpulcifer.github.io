@@ -95,6 +95,7 @@ class Explosion {
         this.frame = 0;
         this.sound = new Audio();
         this.sound.src = 'boom.wav';
+        this.sound.volume = 0.2;
         this.timeSinceLastFrame = 0;
         this.frameInterval = 150;
         this.markedForDeletion = false;
