@@ -1,0 +1,105 @@
+/* ROBOT.GIF from Giphy - https://giphy.com/gifs/robot-cinema-4d-eyedesyn-3o7abtn7DuREEpsyWY */
+
+html {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  overflow: hidden;
+  background-color: #45badd;
+}
+
+.heading {
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  flex-direction: column; 
+  align-items: center;
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 2rem;
+  color: #e04480;
+  text-shadow: 2px 2px rgba(95, 12, 12, 0.8);
+  letter-spacing: 1rem;
+}
+
+.container {
+  height: 100vh;
+  width: 85%;  
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  align-items: center;
+  background: url(./robot.gif);
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+
+button {
+  cursor: pointer;
+  outline: rgb(95, 12, 12) solid 4px;
+  width: 200px;
+  height: 50px;
+  font-family: 'Courier New', Courier, monospace;
+  font-weight: 600;
+  font-size: 20px;
+  -webkit-text-stroke: 0.5px #7497a1;  
+  color: rgb(240,240,240);
+  background: #e04480;
+  border: none;
+  border-radius: 5px;
+  box-shadow: 2px 2px 0px 4px rgba(1, 51, 63, 0.514);
+  margin-bottom: 5vh;
+  margin-top: 4vh;
+}
+
+button:hover {
+  filter: brightness(95%);
+}
+
+button:active {
+  transform: scale(0.98);
+}
+
+button:disabled {
+  cursor: default;
+  filter: grayscale(95%);
+}
+
+.joke-text-container * {
+  display: inline;    
+}
+
+.typewriter {
+  font-family: 'Courier New', Courier, monospace;
+  font-weight: 600;
+  font-size: 18px;
+  color:rgb(95, 12, 12);  
+  border-right: .15em solid #e04480; /* The typwriter cursor */  
+  margin: 0 5vw; /* Gives that scrolling effect as the typing happens */  
+  letter-spacing: .15em; /* Adjust as needed */
+  animation:     
+    blink-caret .75s step-end infinite;
+}
+
+/* The typewriter cursor effect */
+@keyframes blink-caret {
+  from, to { border-color: transparent }
+  50% { border-color: #e04480; }
+}
+
+/* Media Query: Tablet or Smaller */
+@media screen and (max-width: 1000px) {
+  .container {
+    background-position: center center;
+    background-size: cover;
+  }
+
+  button {
+    box-shadow: 3px 3px 0px 5px rgba(1, 51, 63, 0.514);
+  }
+}

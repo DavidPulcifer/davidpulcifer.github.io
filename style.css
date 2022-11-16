@@ -46,3 +46,30 @@ button {
 button:hover {
     background: rgb(203, 236, 248);
 }
+
+button:active {
+    transform: scale(0.98);
+  }
+
+.joke-button {
+    cursor: pointer;
+    outline: rgb(95, 12, 12) solid 4px;
+    width: 200px;
+    height: 50px;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: 600;
+    font-size: 20px;
+    -webkit-text-stroke: 0.5px #7497a1;  
+    color: rgb(240,240,240);
+    background: #e04480;
+    border: none;
+    border-radius: 5px;
+    box-shadow: 2px 2px 0px 4px rgba(1, 51, 63, 0.514);    
+  }
+  
+  .joke-button:hover {
+    background: #e04480;
+    filter: brightness(110%);
+  }
+
+  
